@@ -64,6 +64,19 @@ var check = function () {
     }
 };
 
+var values = function (crysalsClicked) {
+
+    // to update the current score
+    currentScore += crystalsClicked.value;
+
+    // update the scores thus far
+    $("#totalScore").text(currentScore);
+
+    // this calls the check function to see if the score equals the
+    // random number to see if the player has won or not
+    check();
+};
+
 start();
 
 $("#blue").click(function() {
