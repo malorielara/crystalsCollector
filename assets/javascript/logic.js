@@ -20,6 +20,7 @@ var crystals = {
 
 // current/goal score 
 var currentScore = 0;
+var goal = 0;
 
 // win/loss count
 var winCount = 0;
@@ -38,6 +39,33 @@ var start = function () {
     crystals.red.value = Math.random(1, 12);
     crystals.green.value = Math.random(1, 12);
 
+    // to update the scores
     $("#totalScore").text(currentScore);
-    
-}
+    $("#randomNumber").text(goal);
+};
+
+var check = function () {
+    // checking to see if the current score is greater than the
+    // random number provided
+    if(currentScore > goal) {
+        alert("Loser! ");
+        // console.log("loser");
+
+        // to reset the game
+        start(); 
+    }
+
+    else if(currentScore === goal) {
+        alert("WINNER!!! CONGRATS!!!");
+        // console.log("winner");
+
+        // to reset the game
+        start();
+    }
+};
+
+start();
+
+$("#blue").click(function() {
+    addValues(crystals.blue);
+});
