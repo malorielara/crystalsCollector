@@ -56,11 +56,23 @@ var check = function () {
         alert("Loser! ");
         // console.log("loser");
 
+        // add to the loss counter
+        lossCount++;
+
+        // able to show on text
+        $("#rowLoss").text(lossCount);
+
         // to reset the game
         start();
     } else if (currentScore === goal) {
         alert("WINNER!!! CONGRATS!!!");
         // console.log("winner");
+
+        // add to win counter
+        winCount++;
+
+        // so its able to show on the text
+        $("#rowWin").text(winCount);
 
         // to reset the game
         start();
