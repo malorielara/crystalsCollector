@@ -20,7 +20,6 @@ var crystals = {
 
 // current/goal score 
 var currentScore = 0;
-var goal = 0;
 
 // win/loss count
 var winCount = 0;
@@ -39,5 +38,6 @@ var start = function () {
     crystals.red.value = Math.random(1, 12);
     crystals.green.value = Math.random(1, 12);
 
+    $("#totalScore").text(currentScore);
     
 }
