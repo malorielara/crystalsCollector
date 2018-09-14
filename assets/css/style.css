@@ -1,19 +1,29 @@
 .instructions {
-	padding: 2%;
-	font-family: 'Courier New', Courier, monospace;
-	color: black;
+    padding: 2%;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
 }
 
-.randomNumber {
-	padding: 3%; 
-	color: black;
-	font-size: 25px; 
-	font-family: 'Courier New', Courier, monospace;
+.masInstr {
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: black;
 }
 
-.winlose { 
-	padding: 3%; 
-	font-family: 'Courier New', Courier, monospace;
+#randomNumber {
+    padding: 3%;
+    padding-top: 1%;
+    color: black;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#winlose {
+    padding: 3%;
+    padding-top: 1%;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .crystals {
@@ -22,19 +32,19 @@
 
 .totalScore {
     padding: 3%;
-	font-family: 'Courier New', Courier, monospace;
-	color: black;
-
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
 }
 
-.header { 
+.header {
     padding: 2%;
     font-size: 45px;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.wins, .losses { 
-	padding: 2%;
+.wins,
+.losses {
+    padding: 2%;
     color: black;
     font-family: 'Courier New', Courier, monospace;
 }

@@ -27,8 +27,8 @@ var winCount = 0;
 var lossCount = 0;
 
 // helps produce a random number
-var randomNum = function(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+var randomNum = function (min, max) {
+    return "Random Number: " + (Math.floor(Math.random() * (max - min + 1)) + min);
 }
 
 // to start the game
@@ -52,15 +52,13 @@ var start = function () {
 var check = function () {
     // checking to see if the current score is greater than the
     // random number provided
-    if(currentScore > goal) {
+    if (currentScore > goal) {
         alert("Loser! ");
         // console.log("loser");
 
         // to reset the game
-        start(); 
-    }
-
-    else if(currentScore === goal) {
+        start();
+    } else if (currentScore === goal) {
         alert("WINNER!!! CONGRATS!!!");
         // console.log("winner");
 
@@ -84,20 +82,18 @@ var values = function (crystalsClicked) {
 
 start();
 
-$("#blue").click(function() {
+$("#blue").click(function () {
     values(crystals.blue);
 });
 
-$("#yellow").click(function() {
+$("#yellow").click(function () {
     values(crystals.yellow);
 });
 
-$("#red").click(function() {
+$("#red").click(function () {
     values(crystals.red);
 });
 
-$("#green").click(function() {
+$("#green").click(function () {
     values(crystals.green);
 });
-
-

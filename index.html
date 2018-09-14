@@ -9,43 +9,49 @@
 </head>
 
 <body>
-    <div class = "page">
-        <div class = "container">
-            <div class = "row">
-                <h1 class = "header">Crystals Collector</h1>
+    <div class="page">
+        <div class="container">
+            <div class="row">
+                <h1 class="header">Crystals Collector</h1>
             </div>
 
-            <div class = "row">
-                <div class = "col-lg-6 instructions">
+            <div class="row">
+                <div class="col-lg-6 instructions">
                     <h3>INSTRUCTIONS:</h2>
 
-                    <p>
-                        You will be given a random number at the start of the game. There are four crystals below. By clicking on a
-                        crystal you will add a specific amount of points to your total score. 
-                    </p>
-                    <p>
-                        You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. The value of
-                        each crystal is hidden from you until you click on it. Each time when the game starts, the game will change
-                        the values of each crystal
-                    </p>
+                        <br>
+                        <div class="col-md-6 masInstr">
+                            <p>
+                                You will be given a random number at the start of the game. There are four crystals
+                                below. By clicking on a
+                                crystal you will add a specific amount of points to your total score.
+                            </p>
+                            <p>
+                                You win the game by matching your total score to random number, you lose the game if
+                                your total score goes above the random number. The value of
+                                each crystal is hidden from you until you click on it. Each time when the game starts,
+                                the game will change
+                                the values of each crystal
+                            </p>
+                        </div>
                 </div>
 
                 <br>
 
-                <div class = "row">
-                    <div class = "col-lg-6 randomNumber">
-                        <h4>Random Number: </h4>
-                    </div> 
-
-                    <div class = "col-lg-2 winlose">
-                        <div class = "rowWin">Wins: </div>
-                        <div class = "rowLoss">Losses: </div>
+                <div class="row">
+                    <div class="col-lg-6" id = "randomNumber">
+                        Random Number: 
                     </div>
 
-                    <br>
-                
-                    <div class = "row">
-                        <div class = "col-lg-4 crystals">
+                    <div class="col-lg-6" id = "winlose">
+                        <div class="rowWin">Wins: </div>
+                        <div class="rowLoss">Losses: </div>
+                    </div>
+
+                    <!-- <br> -->
+
+                    <div class="row">
+                        <div class="col-lg-4 crystals">
                             <img src="assets/images/blue.png" id="blue">
                             <img src="assets/images/yellow.png" id="yellow">
                             <img src="assets/images/red.png" id="red">
@@ -55,9 +61,9 @@
 
                     <br>
 
-                    <div class = "col-lg-6 totalScore">
+                    <div class="col-lg-6 totalScore">
                         <h4>Total Score: </h4>
-                    </div> 
+                    </div>
 
                 </div>
 
