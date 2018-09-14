@@ -95,17 +95,17 @@ var values = function (crystalsClicked) {
 start();
 
 $("#blue").click(function () {
-    values(crystals.blue);
+    value(crystals.blue);
 });
 
 $("#yellow").click(function () {
-    values(crystals.yellow);
+    value(crystals.yellow);
 });
 
 $("#red").click(function () {
-    values(crystals.red);
+    value(crystals.red);
 });
 
 $("#green").click(function () {
-    values(crystals.green);
+    value(crystals.green);
 });
