@@ -1,0 +1,40 @@
+.instructions {
+	padding: 2%;
+	font-family: 'Courier New', Courier, monospace;
+	color: black;
+}
+
+.randomNumber {
+	padding: 3%; 
+	color: black;
+	font-size: 25px; 
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.winlose { 
+	padding: 3%; 
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.crystals {
+    padding: 3%;
+}
+
+.totalScore {
+    padding: 3%;
+	font-family: 'Courier New', Courier, monospace;
+	color: black;
+
+}
+
+.header { 
+    padding: 2%;
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wins, .losses { 
+	padding: 2%;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
