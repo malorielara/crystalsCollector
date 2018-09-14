@@ -26,12 +26,17 @@ var goal = 0;
 var winCount = 0;
 var lossCount = 0;
 
+// helps produce a random number
+var randomNum = function(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 // to start the game
 var start = function () {
     currentScore = 0;
 
     // gets the goal score between two numbers
-    goal = getRandom(19, 120)
+    goal = randomNum(19, 120)
 
     // setting random values for each crystal
     crystals.blue.value = Math.random(1, 12);
@@ -64,7 +69,7 @@ var check = function () {
     }
 };
 
-var values = function (crysalsClicked) {
+var values = function (crystalsClicked) {
 
     // to update the current score
     currentScore += crystalsClicked.value;
