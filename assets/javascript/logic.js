@@ -67,5 +67,19 @@ var check = function () {
 start();
 
 $("#blue").click(function() {
-    addValues(crystals.blue);
+    values(crystals.blue);
 });
+
+$("#yellow").click(function() {
+    values(crystals.yellow);
+});
+
+$("#red").click(function() {
+    values(crystals.red);
+});
+
+$("#green").click(function() {
+    values(crystals.green);
+});
+
+
