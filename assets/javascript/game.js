@@ -13,7 +13,7 @@ var crystals = {
         value: 0
     },
     green: {
-        name: "blue",
+        name: "green",
         value: 0
     }
 };
@@ -26,10 +26,13 @@ var goal = 0;
 var winCount = 0;
 var lossCount = 0;
 
+
 // helps produce a random number
 var randomNum = function (min, max) {
     return "Random Number: " + (Math.floor(Math.random() * (max - min + 1)) + min);
 }
+
+$(document).ready(function() {
 
 // to start the game
 var start = function () {
@@ -48,6 +51,9 @@ var start = function () {
     $("#totalScore").text(currentScore);
     $("#randomNumber").text(goal);
 };
+
+    console.log("Blue: " + crystals.blue.value + " | Green: " + crystals.green.value + " | Red: " + crystals.red.value +
+        " | Yellow: " + crystals.yellow.value);
 
 var check = function () {
     // checking to see if the current score is greater than the
@@ -94,18 +100,23 @@ var values = function (crystalsClicked) {
 
 start();
 
+// $(document).ready(function() {
+// $(document).on("click", ".crystals", value);
 $("#blue").click(function () {
-    value(crystals.blue);
+    values(crystals.blue);
 });
 
+console.log(crystals);
+
 $("#yellow").click(function () {
-    value(crystals.yellow);
+    values(crystals.yellow);
 });
 
 $("#red").click(function () {
-    value(crystals.red);
+    values(crystals.red);
 });
 
 $("#green").click(function () {
-    value(crystals.green);
+    values(crystals.green);
 });
+})

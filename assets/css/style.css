@@ -16,7 +16,7 @@
     padding: 3%;
     padding-top: 1%;
     color: black;
-    font-size: 25px;
+    font-size: 24px;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -32,6 +32,7 @@
 
 .totalScore {
     padding: 3%;
+    font-size: 24px;
     font-family: 'Courier New', Courier, monospace;
     color: black;
 }
@@ -48,3 +49,4 @@
     color: black;
     font-family: 'Courier New', Courier, monospace;
 }
+
